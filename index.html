@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>365 Days of AI – Project Gallery</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #111827;
+        }
+        body {
+            margin: 0;
+            padding: 2.5rem 1.5rem 3rem;
+            background: linear-gradient(180deg, #f9fafb 0%, #e5e7eb 100%);
+        }
+        header {
+            max-width: 960px;
+            margin: 0 auto 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: clamp(2rem, 4vw, 2.75rem);
+        }
+        header p {
+            margin: 0 auto;
+            max-width: 720px;
+            line-height: 1.6;
+            font-size: 1.05rem;
+            color: #374151;
+        }
+        .grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            gap: 1.75rem;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 20px 45px -18px rgba(15, 23, 42, 0.35);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 160ms ease, box-shadow 160ms ease;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 24px 60px -20px rgba(15, 23, 42, 0.45);
+        }
+        .card__image {
+            display: block;
+            background: #0f172a;
+        }
+        .card__image img {
+            display: block;
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+        .card__body {
+            padding: 1.25rem 1.5rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .card__body h2 {
+            margin: 0;
+            font-size: 1.35rem;
+        }
+        .card__body p {
+            margin: 0;
+            flex: 1;
+            line-height: 1.55;
+            color: #4b5563;
+        }
+        .card__body a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .card__body a:hover,
+        .card__body a:focus {
+            text-decoration: underline;
+        }
+        .card__repo {
+            align-self: flex-start;
+            font-size: 0.95rem;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                background-color: #0f172a;
+                color: #f9fafb;
+            }
+            body {
+                background: radial-gradient(circle at top, #1e293b, #0f172a 60%);
+            }
+            header p {
+                color: #e2e8f0;
+            }
+            .card {
+                background: rgba(15, 23, 42, 0.85);
+                box-shadow: 0 24px 60px -30px rgba(15, 23, 42, 0.8);
+            }
+            .card__body p {
+                color: #cbd5f5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>365 Days of AI Projects</h1>
+        <p>A growing collection of daily builds. Explore each app, see it in action, and dive into the source code to follow along with the journey.</p>
+    </header>
+    <section class="grid">
+        
+            <article class="card">
+                <a class="card__image" href="https://chiefinnovator.github.io/pomodoro/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/https-github-com-chiefinnovator-pomodoro.png" alt="Screenshot of Pomodoro Timer">
+                </a>
+                <div class="card__body">
+                    <h2><a href="https://chiefinnovator.github.io/pomodoro/" target="_blank" rel="noopener noreferrer">Pomodoro Timer</a></h2>
+                    <p>The Pomodoro Timer is a productivity web application designed to help users manage their time effectively using the Pomodoro Technique.</p>
+                    <a class="card__repo" href="https://github.com/ChiefInnovator/pomodoro" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+                </div>
+            </article>
+        
+
+            <article class="card">
+                <a class="card__image" href="https://chiefinnovator.github.io/bloodsugarcalculator/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/https-github-com-chiefinnovator-bloodsugarcalculator.png" alt="Screenshot of Blood Sugar Calculator">
+                </a>
+                <div class="card__body">
+                    <h2><a href="https://chiefinnovator.github.io/bloodsugarcalculator/" target="_blank" rel="noopener noreferrer">Blood Sugar Calculator</a></h2>
+                    <p>A web-based calculator for converting between A1C and estimated Average Glucose (eAG) measurements for diabetes management.</p>
+                    <a class="card__repo" href="https://github.com/ChiefInnovator/bloodsugarcalculator" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+                </div>
+            </article>
+        
+
+            <article class="card">
+                <a class="card__image" href="https://chiefinnovator.github.io/image-to-data-uri-converter/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/https-github-com-chiefinnovator-image-to-data-uri-converter.png" alt="Screenshot of Image to Data URI Converter">
+                </a>
+                <div class="card__body">
+                    <h2><a href="https://chiefinnovator.github.io/image-to-data-uri-converter/" target="_blank" rel="noopener noreferrer">Image to Data URI Converter</a></h2>
+                    <p>A simple, elegant web application that converts images to Data URLs for use in web development.</p>
+                    <a class="card__repo" href="https://github.com/ChiefInnovator/image-to-data-uri-converter" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+                </div>
+            </article>
+        
+
+            <article class="card">
+                <a class="card__image" href="https://chiefinnovator.github.io/daysonpurpose/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/https-github-com-chiefinnovator-daysonpurpose.png" alt="Screenshot of Days on Purpose">
+                </a>
+                <div class="card__body">
+                    <h2><a href="https://chiefinnovator.github.io/daysonpurpose/" target="_blank" rel="noopener noreferrer">Days on Purpose</a></h2>
+                    <p>Turn time into meaningful action.</p>
+                    <a class="card__repo" href="https://github.com/ChiefInnovator/daysonpurpose" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+                </div>
+            </article>
+        
+
+            <article class="card">
+                <a class="card__image" href="https://chiefinnovator.github.io/levelupcircle/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/https-github-com-chiefinnovator-levelupcircle.png" alt="Screenshot of Level Up Circle">
+                </a>
+                <div class="card__body">
+                    <h2><a href="https://chiefinnovator.github.io/levelupcircle/" target="_blank" rel="noopener noreferrer">Level Up Circle</a></h2>
+                    <p>Interactive Level-Up Circle generator for mapping and exporting interconnected goals.</p>
+                    <a class="card__repo" href="https://github.com/ChiefInnovator/levelupcircle" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
+                </div>
+            </article>
+        
+    </section>
+</body>
+</html>
